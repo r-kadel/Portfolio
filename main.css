@@ -6,52 +6,38 @@
 
 body {
     font-family: "Open Sans", sans-serif; 
-    font-size: 20px;
+    font-size: 1em;
     color: white;
     text-align: left;
     line-height: 1.5;
     background-color: darkblue;
-  } 
+    height: 100%;
+} 
 
-.navbar {
-    position: fixed;
+h3{
+    text-align: center;
+}
+
+#nav-section {
+    position: fixed;     
     top: 0;
     left: 0;
     right: 0;
     background-color: darkcyan;
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
-main {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: block;
+    padding-right: 3%;
+    text-align: right;
+    opacity: .7;
 }
 
 .home-view {
+    margin-top: 24px;
     text-align: center;
     padding: 5%;
-}
-
-#picOfMe {
-    display: block;
-    width: 60%;
-    margin: 0 auto;
 }
 
 .about-view {
     background-color: gray;
     padding: 5%;
-}
-
-#quiz-app-pic {
-    display: block;
-    width: 60%;
-    margin: 0 auto;
 }
 
 .projects-view {
@@ -63,6 +49,98 @@ li {
     background-color: gray;
 }
 
-nav li {
-    display: inline-block;
+.menu-list{
+    display: none;
+}
+
+.primary-view{    
+    height: 100vh;
+}  
+
+.content-box{
+    padding: 3%;
+    height: 80%;
+}
+
+#links-box {
+    margin-top: 5%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+#quiz-app-pic {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+}
+
+#picOfMe {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 500px) {
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-right: 10px;
+    }
+    .menu-list {
+        display: inline-block;
+    }
+    nav li {
+        padding-right: 10px;
+        display: inline-block;
+    }
+    #menu-icon {
+        display: none;
+    }
+    .primary-view{    
+        width: 100%;
+        height: 100vh;
+    }  
+    .content-window {
+        height: 50%;
+    }
+  }
+
+@media screen and (min-width: 720px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 1.5em;
+    }
+    #nav-section {
+        width: 20%;
+        height: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+      }
+    .primary-view{    
+        width: 80%;
+        height: 100vh;
+    }  
+    .content-window {
+        height: 100%;
+    }
+    nav li {
+        display: block;
+        padding: 5%;
+        font-size: 1.2em;
+    }
+    .home-view {
+        margin-top: 0;
+    }
+    #picOfMe {
+        width: 30%;
+    }
 }
