@@ -10,47 +10,76 @@ body {
     color: white;
     text-align: left;
     line-height: 1.5;
-    background-color: darkblue;
     height: 100%;
+    background-color: rgb(11, 11, 85);
 } 
 
 h3{
     text-align: center;
+    font-size: 1.2em;
 }
 
-#nav-section {
-    position: fixed;     
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: darkcyan;
-    padding-right: 3%;
-    text-align: right;
-    opacity: .7;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+   color: yellow; 
+   opacity: 1;
+}
+
+p{
+    font-size: .9em;
+}
+
+i {
+    font-size: 1.3em;
+}
+
+button {
+    background-color: rgb(77, 76, 76);
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5%;
+}
+
+ul {
+    list-style-position: inside;
+    margin-left: 2%;
+    font-size: .95em;
+}
+
+.button-box {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list{
+    list-style-type: none;
 }
 
 .home-view {
     margin-top: 24px;
     text-align: center;
     padding: 5%;
+    background-color: rgba(44, 1, 44, 0.75)
 }
 
 .about-view {
-    background-color: gray;
     padding: 5%;
+    background-color: rgba(44, 1, 44, 0.65)
 }
 
 .projects-view {
     padding: 5%;
+    background-color: rgba(44, 1, 44, 0.5)
 }
 
 .contact-view {
     padding: 5%;
-    background-color: gray;
-}
-
-.menu-list{
-    display: none;
+    background-color: rgba(44, 1, 44, 0.3)
 }
 
 .primary-view{    
@@ -60,6 +89,30 @@ h3{
 .content-box{
     padding: 3%;
     height: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+.contacts-box {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-section {
+    position: fixed;     
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-right: 3%;
+    text-align: right;
+    opacity: .9;
+    background-image: url("assets/thom-schneider-iSYYLt2rKac-unsplash.jpg");
+    background-size: cover;
 }
 
 #links-box {
@@ -78,6 +131,24 @@ h3{
     display: block;
     width: 50%;
     margin: 10px auto;
+}
+
+#selfie {
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#bio-list {
+    margin-top:3%;
+}
+
+#menu-icon{
+    margin-top: 5px;
+}
+
+#menu-icon:hover {
+    color: yellow;
 }
 
 /* Media queries */
@@ -101,10 +172,17 @@ h3{
     }
     .primary-view{    
         width: 100%;
-        height: 100vh;
     }  
     .content-window {
-        height: 50%;
+        height: 80%;
+    }
+    #selfie {
+        float: right;
+        height: 60%;
+        margin-top: 20px;
+    }
+    .contact-view {
+        height: 40vh;
     }
   }
 
@@ -124,10 +202,11 @@ h3{
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
+        opacity: 1;
       }
     .primary-view{    
         width: 80%;
-        height: 100vh;
+        min-height: 100vh;
     }  
     .content-window {
         height: 100%;

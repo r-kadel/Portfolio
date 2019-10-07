@@ -6,66 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/19516fd488.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/19516fd488.js" SameSite="None" crossorigin="anonymous"></script>
     <title>Ryan Kadel - Fullstack Web Developer</title>
 </head>
 <body>
     <main>
+
         <section id="nav-section">
     	    <nav class="navbar">
-                <i id="menu-icon" class="fas fa-bars"></i>
-                <ul class="menu-list">
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="About">About</a></li>
-                    <li><a href="Projects">Projects</a></li>
-                    <li><a href="Contact">Contact</a></li>
+                <i id="menu-icon" class="fas fa-bars"></i>                   
+                <ul class="menu-list hidden">
+                    <li><a href="#home-view">Home</a></li>
+                    <li><a href="#about-view">About</a></li>
+                    <li><a href="#projects-view">Projects</a></li>
+                    <li><a href="#contact-view">Contact</a></li>
                 </ul>           
             </nav>
         </section>
+
         <div class="primary-view">
-            <section class="content-window home-view"> 
+            <a name="home-view"></a> 
+            <section class="content-window home-view">
                 <div class="content-box">
                     <h1>Ryan Kadel</h1>
                     <p>- Fullstack Web Developer</p>
+                    <p>- Amateur Comedian</p>
                     <img id="picOfMe" src="assets/Brainslug.jpg" alt="A Picture of me">
                 </div>
-                <div id="links-box">
-                        <i class="far fa-envelope"></i>
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-linkedin"></i> 
+            </section>
+
+            <a name="about-view"></a>
+            <section class="content-window about-view">
+                    <h3>A little about me</h3>
+                    <div class="content-box">
+                        <img src="assets/IMG_20191006_203920.jpg" id="selfie">
+                            <ul id="bio-list">    
+                                <li>Lifetime gamer and computer enthusiast</li>
+                                <li> Fluent in:
+                                    <ul>
+                                        <li>Javascript</li>
+                                        <li>HTML 3</li>
+                                        <li>CSS 3</li>
+                                    </ul>
+                                </li>
+                                <li>World of Warcraft High Warlord</li>
+                            </ul>
                     </div>
             </section>
 
-            <section class="content-window about-view">
-                <div class="content-box">
-                    
-                    <h3>A little about me</h3>
-                        <ul>    
-                            <li>Lifetime gamer and computer enthusiast</li>
-                            <li>Javascript expert</li>
-                            <li>World of Warcraft High Warlord</li>
-                        </ul>
+            <a name="projects-view"></a>
+            <section class="content-window projects-view">
+                <h3>The Health Quiz App</h3>
+                <img id="quiz-app-pic" src="assets/810997513.png" alt="Quiz App landing page picture">
+                <p>This is a simple quiz web application showcasing HTML CSS Javascript and Jquery</p>
+                <div class="button-box">
+                    <button><a href="https://github.com/r-kadel/Quiz-App">Github Repo</a></button>
+                    <button><a href="https://r-kadel.github.io/Quiz-App">Demo</a></button>
                 </div>
             </section>
 
-            <section class="content-window projects-view">
-                <h3>The Health Quiz App</h3>
-                <img id="quiz-app-pic" src="assets/dark-background.jpeg" alt="Quiz App landing page picture">
-                <p>This is a simple quiz web application showcasing HTML CSS Javascript and Jquery</p>
-            </section>
-
+            <a name="contact-view"></a>
             <section class="content-window contact-view">
                 <h3>How to get in touch</h3>
                     <div class="content-box">
-                        <h6>Please get in touch with me at any time if you are hiring, want to talk code, or just to say hi!</h6>
-                        <ul class="contact-info">
-                            <li><a>Email: ryan.kadel88@gmail.com</a></li>
-                            <li><a>Github</a></li>
-                            <li><a>LinkedIn</a></li>
-                        </ul>
+                        <h5>Please get in touch with me at any time if you are hiring, want to talk code, or just to say hi!</h5>
+                        <div class="contacts-box">
+                            <a href="mailto:ryan.kadel@yahoo.com">
+                                <i class="far fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/r-kadel">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ryan-kadel-6417a0194">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
                     </div>       
             </section>
         </div>
     </main>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
 </body>
 </html>
