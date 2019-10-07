@@ -186,7 +186,7 @@ ul {
     }
     #selfie {
         float: right;
-        height: 60%;
+        height: 45%;
         margin-top: 20px;
     }
     .contact-view {
@@ -194,7 +194,7 @@ ul {
     }
   }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 750px) {
     main{
         display: flex;
         flex-direction: column;
@@ -229,5 +229,16 @@ ul {
     }
     #picOfMe {
         width: 30%;
+    }
+    #selfie{
+        margin-top: 40px;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #selfie{
+        margin-top: 60px;
+        height: 60%;
     }
 }
