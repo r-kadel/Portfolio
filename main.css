@@ -25,6 +25,11 @@ h3{
 
 h5{
     font-family: "open-sans";
+    font-size: 1.1em;
+}
+
+span {
+    font-size: 1.2em;
 }
 
 a {
@@ -37,12 +42,8 @@ a:hover {
    opacity: 1;
 }
 
-p{
-    font-size: .9em;
-}
-
 i {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 button {
@@ -181,12 +182,9 @@ ul {
     .primary-view{    
         width: 100%;
     }  
-    .content-window {
-        height: 80%;
-    }
+    
     #selfie {
-        float: right;
-        height: 45%;
+        height: 200px;
         margin-top: 20px;
     }
     .contact-view {
@@ -228,11 +226,16 @@ ul {
         margin-top: 0;
     }
     #picOfMe {
-        width: 30%;
+        margin-top: 45px;
+        width: 45%;
     }
     #selfie{
         margin-top: 40px;
         height: 40%;
+        float: right;
+    }
+    span {
+        font-size: 1.4em;
     }
 }
 
@@ -240,5 +243,11 @@ ul {
     #selfie{
         margin-top: 60px;
         height: 60%;
+    }
+    .contacts-box{
+        margin-top: 150px;
+    }
+    span {
+        font-size: 1.6em;
     }
 }
