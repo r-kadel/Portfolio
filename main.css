@@ -130,7 +130,7 @@ ul {
     padding-right: 5%;
 }
 
-#quiz-app-pic {
+.project-pic {
     display: block;
     width: 50%;
     margin: 10px auto;
@@ -160,6 +160,9 @@ ul {
     color: yellow;
 }
 
+.content-window {
+    display: block;
+}
 /* Media queries */
 
 @media screen and (min-width: 500px) {
