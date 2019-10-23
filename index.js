@@ -1,3 +1,4 @@
-$('#menu-icon').on('click', function(e) {
+$('#menu-icon').on('click', function() {
     $('.menu-list').toggleClass('hidden');
+
 })

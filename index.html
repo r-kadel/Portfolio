@@ -16,10 +16,10 @@
     	    <nav class="navbar">
                 <i id="menu-icon" class="fas fa-bars"></i>                   
                 <ul class="menu-list hidden">
-                    <li><a href="#home-view">Home</a></li>
-                    <li><a href="#about-view">About</a></li>
-                    <li><a href="#projects-view">Projects</a></li>
-                    <li><a href="#contact-view">Contact</a></li>
+                    <li id="home-link"><a href="#home-view">Home</a></li>
+                    <li id="about-link"><a href="#about-view">About</a></li>
+                    <li id="projects-link"><a href="#projects-view">Projects</a></li>
+                    <li id="contact-link"><a href="#contact-view">Contact</a></li>
                 </ul>           
             </nav>
         </section>
@@ -32,6 +32,7 @@
                     <p>- Fullstack Web Developer</p>
                     <p>- Amateur Comedian</p>
                     <img id="picOfMe" src="assets/Brainslug.jpg" alt="Funny picture about my programming life">
+                    <p id="caption">"A day in the life of a developer"</p>
                 </div>
             </section>
 
@@ -52,6 +53,8 @@
                                 </li>
                                 <li>World of Warcraft High Warlord</li>
                             </ul>
+                            <p id="about-paragraph">Hello, I am Ryan, a recent graduate of the Thinkful Software Engineering course. I've been interested in computers since I was very young and first got my hands on a "Macintosh II" in a computers summer camp, because I was the kid that wanted to go to computer camp. Forget camping. After over a decade in retail and retail management I'm finally doing something that I really enjoy, and hope to combine my experience with my passion for programming to excel in the modern team based development environment.
+                            </p>
                     </div>
             </section>
 
@@ -73,14 +76,23 @@
                 <div class="project-container">
                     <h3>FixIt</h3>
                     <img class="project-pic" src="assets/Fixit.png" alt="Fixit App landing page picture">
-                    <p>This is the API Hack capstone project for Thinkul's Nights and Weekends software engineering course
-                        I worked with an excellent partner <a href="https://github.com/brittanyweickert/"><i class="fab fa-github"></i>Brittany Weickert</a></p>
-                    <p>The App is designed with people who have recently damaged their smartphones in mind. The user enters the smartphone model and zip code and they are shown a list of youtube videos that demonstrate the repair for the DIY'er as well as a map of their area with markers and list for local repair shops If they are less bold
-                        
-                        This app uses the youtube API to display the videos Google's cloud platform - geocode api to turn their zip code into usable lat an long numbers and maps javascript api to display the results as markers on a map of their area. The lists of shops are populated using Foursquare's search API
-                        
-                        The other technologies used are HTML, CSS, Javascript and jQuery.
+                    <p>This is the API Hack capstone project for Thinkul's Nights and Weekends software engineering course.
+                        For this project I worked with an excellent partner:    <a href="https://github.com/brittanyweickert/"><span id="partner-name"><i class="fab fa-github"></i> Brittany Weickert</span></a></p>
+                    <p>The App is designed with people who have recently damaged their smartphones in mind. The user enters the 
+                        smartphone model and zip code and they are shown a list of youtube videos that demonstrate 
+                        the repair for the DIY'er as well as a map of their area with markers and list for local repair shops If they are less bold.
                     </p>
+                    <ul class="tech-list"> 
+                        <li>This app uses the youtube API to display the videos</li>
+                            <li> Google Cloud Platform -
+                                <ul>
+                                    <li>Geocode API to turn their zip code into usable lat and long numbers</li>
+                                    <li>Google's Javascript Maps API to display the results as markers on a map of their area</li>
+                                </ul>
+                            </li>
+                            <li>The lists of shops are populated using Foursquare's search API</li>
+                            <li>The app also features ample HTML, CSS, Javascript and jQuery</li>
+                    </ul>
                     <div class="button-box">
                         <button><a href="https://github.com/brittanyweickert/fixit"><span>Github Repo</span></a></button>
                         <button><a href="https://brittanyweickert.github.io/fixit"><span>Demo</span></a></button>
